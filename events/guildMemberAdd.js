@@ -71,10 +71,8 @@ module.exports = async (client) => {
                 const attachment = new AttachmentBuilder(card, { name: 'welcome.png' });
 
                 const embed = new EmbedBuilder()
-                    .setTitle("Welcome to the Server!")
                     .setDescription(`${member}! You are the **${memberCount}${suffix}** member of our server!`)
                     .setColor("#00e5ff")
-                    .setThumbnail(member.user.displayAvatarURL())
                     .setImage('attachment://welcome.png')
                     .addFields(
                         { name: 'Username', value: userName, inline: true },
@@ -82,7 +80,8 @@ module.exports = async (client) => {
                         { name: 'Account Created', value: creationDate, inline: true }
                     )
                     .setFooter({ text: "We're glad to have you here!", iconURL: serverIcon })
-                    .setAuthor({ name: serverName, iconURL: serverIcon })
+                    .setAuthor({name: `${member.user.username}`,iconURL: member.user.displayAvatarURL() 
+    })
                     .setTimestamp();
 
                 welcomeChannel.send({
