@@ -22,7 +22,7 @@
     },
      "lavalink": {
         "lavalink": {
-            "password": "saher.inzeworld.com",
+        "password": "saher.inzeworld.com",
         "host": "lava.inzeworld.com",
         "port": 3128,
         "secure": false
