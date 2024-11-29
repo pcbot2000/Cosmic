@@ -79,7 +79,7 @@ module.exports = async (client) => {
                         { name: 'Join Date', value: joinDate, inline: true },
                         { name: 'Account Created', value: creationDate, inline: true }
                     )
-                    .setFooter({ text: "We're glad to have you here!", iconURL: serverIcon })
+                    .setFooter({ text: "We're Glad To Have You Here!", iconURL: serverIcon })
                     .setAuthor({name: `${member.user.username}`,iconURL: member.user.displayAvatarURL() 
     })
                     .setTimestamp();
