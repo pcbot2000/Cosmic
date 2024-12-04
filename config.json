@@ -22,10 +22,10 @@
     },
      "lavalink": {
         "lavalink": {
-        "password": "saher.inzeworld.com",
-        "host": "lava.inzeworld.com",
-        "port": 3128,
-        "secure": false
+        "password": "https://dsc.gg/ajidevserver",
+        "host": "lava-v4.ajieblogs.eu.org",
+        "port": 443,
+        "secure": true
         }
     }, 
     "spotifyClientId": "f71a3da30e254962965ca2a89d6f74b9",
